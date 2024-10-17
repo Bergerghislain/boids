@@ -1,33 +1,34 @@
 # TPL 2A POO - 2023-24
 
-Les ressources distribuées contiennent:
+Ce projet Java est une application qui simule graphiquement différents systèmes multi-agents, notamment :
 
-- le sujet
-- une librairie d'affichage graphique d'un simulateur (lib/gui.jar) et sa documentation (doc/index.html)
-- un fichier de démonstration du simulateur (src/TestInvader.java)
+* **Automates cellulaires :**
+    * Le jeu de la vie de Conway
+    * Un jeu d’immigration
+    * Le modèle de ségrégation de Schelling
+* **Un système de mouvement d’essaims auto-organisés :**
+    * Le modèle de Boids
+    * Plusieurs groupes de Boids avec des comportements et des fréquences de mise à jour différents.
 
-Une mini-introdution à la notation UML des diagrammes de classes est disponibe pour faciliter la lecture du sujet ([Fiche 7](https://programmation-orientee-objet.pages.ensimag.fr/poo/resources/fiches/07-UML/)).
+Ce projet met en œuvre des concepts de programmation orientée objet tels que l’encapsulation, la délégation, l’héritage, l’abstraction et l’utilisation des collections Java. Il explore également des sujets liés à l’intelligence artificielle, tels que les systèmes multi-agents et les algorithmes de simulation.
 
+## Conception
 
-## Compilation & exécution
-### Avec un makefile?
-Un fichier Makefile est distribué pour facilement compiler et exécuter le fichier TestInvader.java
+Un effort particulier a été porté sur la conception orientée objet des classes afin de maximiser la généralisation du code commun entre les différents systèmes multi-agents étudiés. Le projet utilise un gestionnaire d’événements discrets pour gérer les différentes fréquences de mise à jour des agents.
 
-Mais vu la taille de ce projet, il est ***très fortement recommandé d'utiliser un IDE*** pour compiler, exécuter et déboguer votre code!
+## Fonctionnalités
 
-### IDE Idea Intellij
-- créer un nouveau projet:
-    - menu *File/New Project*
-    - si le répertoire distribué est dans "~/Ensimag/2A/POO/TPL_2A_POO", alors paramétrer les champs *Name* avec "TPL_2A_POO" et *Location* avec "~/Ensimag/2A/POO/"
-- configurer l'utilisation de la librairie
-    - menu *File/Project Structure* puis *Projet setting/Modules*
-    - clicker sur(*Add* puis "JARs & Directories" et sélectionner ~/Ensimag/2A/POO/TPL_2A_POO/lib
-    - voir ici pour plus d'aide: https://stackoverflow.com/questions/1051640/correct-way-to-add-external-jars-lib-jar-to-an-intellij-idea-project
-- vous pouvez bien sûr utiliser git via l'interface d'idea Intellij
+* Simulation graphique de différents systèmes multi-agents.
+* Contrôle de la simulation via une interface graphique conviviale.
+* Prise en charge de plusieurs groupes de Boids avec des comportements différents.
+* Gestionnaire d’événements discrets pour une simulation précise.
+* Code propre, bien structuré et conforme au style de codage Java.
+* Documentation minimale des classes et méthodes principales.
 
-### IDE VS Code
-- dans "~/Ensimag/2A/POO/TPL_2A_POO", lancer *code ."
-- si vous avez installé les bonnes extensions java (exécution, debogage...) il est possible que tout fonctionne sans rien faire de spécial.
-- s'il ne trouve pas la librairie, vous devez alors créer un vrai "projet" et configurer l'import du .jar.
-- pas vraiment d'aide pour ça, vous trouverez
-- vous pouvez bien sûr utiliser git via l'interface de VS code
+## Instructions d’exécution
+
+Pour exécuter l’application, vous devez disposer de Java installé sur votre système. Téléchargez le fichier JAR exécutable et exécutez-le à partir de votre terminal à l’aide de la commande `java -jar nom-du-fichier.jar`.
+
+## Contribution
+
+Les contributions à ce projet sont les bienvenues. N’hésitez pas à créer des problèmes ou à soumettre des demandes d’extraction pour signaler des bogues ou proposer des améliorations.
